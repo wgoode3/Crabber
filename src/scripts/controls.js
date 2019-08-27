@@ -14,6 +14,10 @@ document.onkeydown = function(e) {
     } else if(e.keyCode === 39) {
         // go right
         position.x += 50;
+    } else if(e.keyCode === 32) {
+        if(!active) {
+            window.location.reload();
+        }
     }
     movePlayer();
 }
