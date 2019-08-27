@@ -2,7 +2,7 @@ console.log("player.js loaded");
 
 var position = {
     x: 200,
-    y: 500
+    y: 550
 };
 
 var player = document.getElementById("player");
@@ -18,7 +18,9 @@ function movePlayer() {
     } else if(position.y < 0) {
         position.y = 0;
     }
-    player.style.top = `${position.y}px`;
-    player.style.left = `${position.x}px`;
+    if(active) {
+        player.style.top = `${position.y}px`;
+        player.style.left = `${position.x}px`;
+    }
 }
 movePlayer();

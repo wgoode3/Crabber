@@ -1,6 +1,7 @@
 console.log("main.js loaded");
 
 var game = document.getElementById("game");
+var active = true;
 
 var playfield = [
     "0000000000", // goal zone
