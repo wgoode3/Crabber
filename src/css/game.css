@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.grass-1, .grass-2, .grass-3, .grass-4, .grass-5, .grass-6,
+.road-lower-1, .road-lower-2,
+.road-middle-1, .road-middle-2,
+.road-upper-1, .road-upper-2,
+#player, .car1, .car2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+}
+
+#player { 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../sprites/frog.png'); 
+}
+
+.car1 {
+    position: absolute;
+    background: url('../sprites/car.png');
+}
+
+.car2 {
+    position: absolute;
+    background: url('../sprites/car.png');
+    transform: scaleX(-1);
+}
+
+.grass-1 { background: url('../sprites/grass-1.png'); }
+.grass-2 { background: url('../sprites/grass-2.png'); }
+.grass-3 { background: url('../sprites/grass-3.png'); }
+.grass-4 { background: url('../sprites/grass-4.png'); }
+.grass-5 { background: url('../sprites/grass-5.png'); }
+.grass-6 { background: url('../sprites/grass-6.png'); }
+.road-lower-1 { background: url('../sprites/road-lower-1.png'); }
+.road-lower-2 { background: url('../sprites/road-lower-2.png'); }
+.road-middle-1 { background: url('../sprites/road-middle-1.png'); }
+.road-middle-2 { background: url('../sprites/road-middle-2.png'); }
+.road-upper-1 { background: url('../sprites/road-upper-1.png'); }
+.road-upper-2 { background: url('../sprites/road-upper-2.png'); }
+
